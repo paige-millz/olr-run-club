@@ -1,0 +1,24 @@
+import Image from "next/image";
+
+export default function Footer() {
+  return (
+    <footer className="py-16 px-6 border-t border-cream/10">
+      <div className="max-w-3xl mx-auto text-center space-y-4">
+        <Image
+          src="/assets/OLR_Run_Club_Sticker_Oval.svg"
+          alt="OLR Run Club"
+          width={64}
+          height={64}
+          className="w-16 h-16 mx-auto mb-6 opacity-60"
+        />
+        <p className="text-cream/40 text-sm">
+          Old LaGrange Road &middot; Crestwood, KY
+        </p>
+        <p className="text-cream/30 text-xs">Free water since 2025</p>
+        <p className="text-cream/20 text-xs">
+          Made by the house at the top of the hill
+        </p>
+      </div>
+    </footer>
+  );
+}
