@@ -29,7 +29,8 @@ export const metadata: Metadata = {
     images: ["/assets/FREE_WATER___RUNNERS___BIKERS_ONLY.png"],
   },
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💧</text></svg>",
+    icon: "/assets/favicon.png",
+    apple: "/assets/favicon.png",
   },
 };
 

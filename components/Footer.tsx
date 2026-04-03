@@ -14,7 +14,7 @@ export default function Footer() {
         <p className="text-cream/40 text-sm">
           Old LaGrange Road &middot; Crestwood, KY
         </p>
-        <p className="text-cream/30 text-xs">Free water since 2025</p>
+        <p className="text-cream/30 text-xs">Free water since 2026</p>
         <p className="text-cream/20 text-xs">
           Made by the house at the top of the hill
         </p>

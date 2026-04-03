@@ -10,70 +10,73 @@ export default function Community() {
           that runners and cyclists have quietly claimed.
         </p>
 
-        {/* Strava Link Block */}
-        <a
-          href="https://strava.app.link/nOhAqmCm11b"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex flex-col items-center gap-4 group"
-        >
-          {/* Strava wordmark */}
-          <svg
-            width="120"
-            height="24"
-            viewBox="0 0 120 24"
-            className="text-cream/50 group-hover:text-cream transition-colors"
+        <div className="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto mb-8">
+          {/* Strava Button */}
+          <a
+            href="https://strava.app.link/nOhAqmCm11b"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 border-2 border-cream/40 hover:border-cream hover:bg-cream/10 rounded-lg px-6 py-5 transition-all group"
           >
-            <text
-              x="0"
-              y="20"
+            {/* Strava icon */}
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
               fill="currentColor"
-              fontFamily="Inter, sans-serif"
-              fontWeight="700"
-              fontSize="20"
-              letterSpacing="2"
+              className="text-[#FC4C02] shrink-0"
             >
-              STRAVA
-            </text>
-          </svg>
-          <span className="text-cream/70 group-hover:text-cream transition-colors text-sm underline underline-offset-4 decoration-cream/30 group-hover:decoration-cream/60">
-            Join our Strava club
-          </span>
-        </a>
+              <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+            </svg>
+            <div className="text-left">
+              <span className="text-cream font-bold text-base block leading-tight">
+                Join on Strava
+              </span>
+              <span className="text-cream/50 text-xs">
+                OLR Run Club
+              </span>
+            </div>
+          </a>
 
-        <p className="text-cream/30 text-xs mt-6 mb-16">
-          No group runs scheduled. No pressure. Just the road.
-        </p>
-
-        {/* Instagram Link Block */}
-        <a
-          href="https://instagram.com/Run_OLR"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex flex-col items-center gap-4 group"
-        >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="text-cream/50 group-hover:text-cream transition-colors w-8 h-8"
+          {/* Instagram Button */}
+          <a
+            href="https://instagram.com/Run_OLR"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 border-2 border-cream/40 hover:border-cream hover:bg-cream/10 rounded-lg px-6 py-5 transition-all group"
           >
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-            <circle cx="12" cy="12" r="5" />
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-          </svg>
-          <span className="text-cream/70 group-hover:text-cream transition-colors text-sm underline underline-offset-4 decoration-cream/30 group-hover:decoration-cream/60">
-            @Run_OLR on Instagram
-          </span>
-        </a>
+            {/* Instagram icon */}
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-[#E1306C] shrink-0"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+            <div className="text-left">
+              <span className="text-cream font-bold text-base block leading-tight">
+                @Run_OLR
+              </span>
+              <span className="text-cream/50 text-xs">
+                Follow on Instagram
+              </span>
+            </div>
+          </a>
+        </div>
 
-        <p className="text-cream/30 text-xs mt-6">
+        <p className="text-cream/40 text-sm mt-8">
           Tag us at the cooler. We love seeing it.
+        </p>
+        <p className="text-cream/30 text-xs mt-3">
+          No group runs scheduled. No pressure. Just the road.
         </p>
       </div>
     </section>
