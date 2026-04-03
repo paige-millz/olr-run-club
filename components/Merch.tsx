@@ -132,7 +132,7 @@ export default function Merch() {
             <div className="flex-1 flex items-center justify-center py-8">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://cdn.printful.me/t/quick-stores/variants/w339/1431323369cf2e9d0c9df__825"
+                src="/api/tshirt-image"
                 alt="OLR Run Club T-Shirt — black heavyweight tee"
                 className="w-48 h-48 object-contain"
                 loading="lazy"
