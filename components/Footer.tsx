@@ -5,8 +5,8 @@ export default function Footer() {
     <footer className="py-16 px-6 border-t border-cream/10">
       <div className="max-w-3xl mx-auto text-center space-y-4">
         <Image
-          src="/assets/OLR_Run_Club_Sticker_Oval.svg"
-          alt="OLR Run Club"
+          src="/assets/favicon.png"
+          alt="OLR Run Club Runner"
           width={64}
           height={64}
           className="w-16 h-16 mx-auto mb-6 opacity-60"

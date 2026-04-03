@@ -14,9 +14,9 @@ export default function Nav() {
           <Image
             src="/assets/OLR_Bubble_wRunClub.svg"
             alt="OLR Run Club"
-            width={48}
-            height={48}
-            className="w-12 h-12"
+            width={56}
+            height={56}
+            className="w-14 h-14"
           />
         </a>
 
