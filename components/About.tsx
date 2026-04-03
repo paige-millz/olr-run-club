@@ -27,21 +27,16 @@ export default function About() {
                 love with this little road full of runners and cyclists. So we
                 took that childhood feeling — a cold drink at the end of the
                 push — and put a cooler at the end of the driveway. Mini waters,
-                ice, a handmade sign. No catch. No sign-up. Just cold water for
-                anyone putting in the miles.
-              </p>
-              <p>
-                Stickers showed up at a local shop. People started waving. A
-                little community formed around none of this being a big deal.
-                That&rsquo;s the whole story.
+                ice. No catch. No sign-up. Just cold water for anyone putting
+                in the miles.
               </p>
             </div>
           </div>
           <div className="flex items-center justify-center">
             <blockquote className="text-3xl md:text-4xl font-black text-cream leading-tight">
-              &ldquo;The road takes care of you.
+              Old Roads.
               <br />
-              We take care of the road.&rdquo;
+              Fast Legs.
             </blockquote>
           </div>
         </div>

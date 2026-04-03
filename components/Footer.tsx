@@ -16,7 +16,7 @@ export default function Footer() {
         </p>
         <p className="text-cream/30 text-xs">Free water since 2026</p>
         <p className="text-cream/20 text-xs">
-          Made by the house at the top of the hill
+          From the folks at 5890
         </p>
       </div>
     </footer>
