@@ -130,21 +130,17 @@ export default function Merch() {
           {/* T-Shirt Card */}
           <div className="merch-card border border-cream/20 rounded-lg p-6 flex flex-col">
             <div className="flex-1 flex items-center justify-center py-8">
-              <div className="w-48 h-48 bg-black rounded-lg flex items-center justify-center gap-4 border border-cream/10 relative overflow-hidden">
+              <div className="w-56 h-56 bg-black rounded-lg flex flex-col items-center justify-center border border-cream/10 relative overflow-hidden">
                 <Image
                   src="/assets/OLR_Bubble_wRunClub.svg"
                   alt="OLR Run Club"
-                  width={60}
-                  height={60}
-                  className="w-14 h-14 object-contain"
+                  width={120}
+                  height={120}
+                  className="w-28 h-28 object-contain"
                 />
-                <Image
-                  src="/assets/favicon.png"
-                  alt="OLR Runner"
-                  width={48}
-                  height={48}
-                  className="w-10 h-10 object-contain"
-                />
+                <span className="text-cream/30 text-[10px] tracking-widest uppercase mt-3">
+                  Heavyweight Tee
+                </span>
               </div>
             </div>
             <div className="space-y-3">
