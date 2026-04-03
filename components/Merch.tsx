@@ -130,12 +130,12 @@ export default function Merch() {
           {/* T-Shirt Card */}
           <div className="merch-card border border-cream/20 rounded-lg p-6 flex flex-col">
             <div className="flex-1 flex items-center justify-center py-8">
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="https://cdn.printful.me/t/quick-stores/variants/w339/1431323369cf2e9d0c9df__825"
                 alt="OLR Run Club T-Shirt — black heavyweight tee"
-                width={400}
-                height={400}
                 className="w-48 h-48 object-contain"
+                loading="lazy"
               />
             </div>
             <div className="space-y-3">
