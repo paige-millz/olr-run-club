@@ -9,7 +9,7 @@ export default function Footer() {
           alt="OLR Run Club Runner"
           width={80}
           height={80}
-          className="w-20 h-20 mx-auto mb-6 rounded-full"
+          className="w-20 h-20 mx-auto mb-6 rounded-full border border-cream/20"
         />
         <p className="text-cream/40 text-sm">
           Old LaGrange Road &middot; Crestwood, KY
