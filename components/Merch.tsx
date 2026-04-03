@@ -130,13 +130,22 @@ export default function Merch() {
           {/* T-Shirt Card */}
           <div className="merch-card border border-cream/20 rounded-lg p-6 flex flex-col">
             <div className="flex-1 flex items-center justify-center py-8">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/api/tshirt-image"
-                alt="OLR Run Club T-Shirt — black heavyweight tee"
-                className="w-48 h-48 object-contain"
-                loading="lazy"
-              />
+              <div className="w-48 h-48 bg-black rounded-lg flex items-center justify-center gap-4 border border-cream/10 relative overflow-hidden">
+                <Image
+                  src="/assets/OLR_Bubble_wRunClub.svg"
+                  alt="OLR Run Club"
+                  width={60}
+                  height={60}
+                  className="w-14 h-14 object-contain"
+                />
+                <Image
+                  src="/assets/favicon.png"
+                  alt="OLR Runner"
+                  width={48}
+                  height={48}
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
             </div>
             <div className="space-y-3">
               <h3 className="text-xl font-bold text-cream">OLR T-Shirt</h3>
