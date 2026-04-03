@@ -12,11 +12,11 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex-shrink-0">
           <Image
-            src="/assets/OLR_Bubble_wRunClub.svg"
+            src="/assets/OLR_Bubble_wRunClub_cropped.svg"
             alt="OLR Run Club"
-            width={80}
-            height={80}
-            className="h-16 w-auto"
+            width={120}
+            height={89}
+            className="h-14 w-auto"
           />
         </a>
 
