@@ -5,11 +5,11 @@ export default function Footer() {
     <footer className="py-16 px-6 border-t border-cream/10">
       <div className="max-w-3xl mx-auto text-center space-y-4">
         <Image
-          src="/assets/favicon.png"
+          src="/assets/runner-mascot.png"
           alt="OLR Run Club Runner"
           width={80}
           height={80}
-          className="w-20 h-20 mx-auto mb-6 rounded-full border border-cream/20"
+          className="w-20 h-20 mx-auto mb-6 opacity-50"
         />
         <p className="text-cream/40 text-sm">
           Old LaGrange Road &middot; Crestwood, KY
