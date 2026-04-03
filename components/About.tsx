@@ -17,9 +17,18 @@ export default function About() {
                 most mornings.
               </p>
               <p>
-                Every spring, a cooler appears at a house near the top of the
-                hill. Mini waters, ice, a handmade sign. No catch. No sign-up.
-                Just cold water for anyone putting in the miles.
+                Ben and Paige grew up in Pennsylvania, where they each had a
+                place to ride their bikes to for water — a gas station, a
+                neighbor&rsquo;s hose, whatever it was. Those spots gave the ride
+                a destination, something worth pedaling to.
+              </p>
+              <p>
+                They bought 5890 Old LaGrange Road in October 2023 and fell in
+                love with this little road full of runners and cyclists. So they
+                took that childhood feeling — a cold drink at the end of the
+                push — and put a cooler out front. Mini waters, ice, a handmade
+                sign. No catch. No sign-up. Just cold water for anyone putting
+                in the miles.
               </p>
               <p>
                 Stickers showed up at a local shop. People started waving. A
