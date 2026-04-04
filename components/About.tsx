@@ -27,7 +27,7 @@ export default function About() {
                 love with this little road full of runners and cyclists. So we
                 took that childhood feeling — a cold drink at the end of the
                 push — and put a cooler at the end of the driveway. Mini waters,
-                ice. No catch. No sign-up. Just cold water for anyone putting
+                ice. no catch. No sign-up. Just cold water for anyone putting
                 in the miles.
               </p>
             </div>
