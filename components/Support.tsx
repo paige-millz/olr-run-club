@@ -1,8 +1,33 @@
 "use client";
 
-const VENMO_HANDLE = "RunOLR";
+import { useEffect, useRef } from "react";
 
 export default function Support() {
+  const embedRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js";
+    script.setAttribute("data-name", "BMC-Widget");
+    script.setAttribute("data-cfasync", "false");
+    script.setAttribute("data-id", "runolr");
+    script.setAttribute("data-description", "Support the cooler!");
+    script.setAttribute("data-message", "");
+    script.setAttribute("data-color", "#fcf4df");
+    script.setAttribute("data-position", "Right");
+    script.setAttribute("data-x_margin", "18");
+    script.setAttribute("data-y_margin", "18");
+    script.async = true;
+
+    document.head.appendChild(script);
+
+    return () => {
+      script.remove();
+      const widget = document.getElementById("bmc-wbtn");
+      if (widget) widget.remove();
+    };
+  }, []);
+
   return (
     <section id="support" className="py-24 px-6">
       <div className="max-w-3xl mx-auto text-center">
@@ -14,20 +39,35 @@ export default function Support() {
           thanks, you can do that here. Truly no pressure. A wave works too.
         </p>
 
-        <a
-          href={`https://venmo.com/${VENMO_HANDLE}?txn=pay&note=OLR%20Cooler%20Fund`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 border border-cream/60 hover:border-cream text-cream px-6 py-3 rounded-lg text-sm font-medium transition-colors"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-[#008CFF]">
-            <path d="M19.5 3.5c.8 1.3 1.2 2.7 1.2 4.3 0 3.4-2.9 7.8-5.2 10.9H9.3L7 3.8l5-.5.9 7.3c.9-1.5 2-3.8 2-5.4 0-1-.2-1.7-.4-2.3l5-1.4z" />
-          </svg>
-          Send us a tip on Venmo
-        </a>
+        <div ref={embedRef} className="flex justify-center mb-8">
+          <a
+            href="https://www.buymeacoffee.com/runolr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border border-cream/60 hover:border-cream text-cream px-6 py-3 rounded-lg text-sm font-medium transition-colors"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+              <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+              <line x1="6" x2="6" y1="2" y2="4" />
+              <line x1="10" x2="10" y1="2" y2="4" />
+              <line x1="14" x2="14" y1="2" y2="4" />
+            </svg>
+            Buy us a water
+          </a>
+        </div>
 
-        <p className="text-cream/30 text-xs mt-6">
-          @{VENMO_HANDLE} &middot; 100% goes back into waters, ice, and the occasional sticker run.
+        <p className="text-cream/30 text-xs">
+          100% goes back into waters, ice, and the occasional sticker run.
         </p>
       </div>
     </section>

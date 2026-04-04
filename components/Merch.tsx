@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 const SIZES = ["S", "M", "L", "XL", "XXL"];
-const VENMO_HANDLE = "RunOLR";
+const BMC_URL = "https://www.buymeacoffee.com/runolr";
 
 type Product = "tee" | "sticker";
 
@@ -301,24 +301,34 @@ export default function Merch() {
         <h2 className="text-3xl font-black text-cream mb-4">Order Placed</h2>
         <p className="text-cream/60 text-sm mb-8">
           Thanks, {form.name}! To complete your order, send{" "}
-          <span className="text-cream font-bold">${total}</span> via Venmo.
+          <span className="text-cream font-bold">${total}</span> via Buy Me a
+          Coffee.
         </p>
 
         <a
-          href={`https://venmo.com/${VENMO_HANDLE}?txn=pay&amount=${total}&note=OLR%20${form.product === "tee" ? `Tee%20(${form.size})` : "Sticker"}%20x${form.quantity}`}
+          href={BMC_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 bg-[#008CFF] hover:bg-[#0070CC] text-white px-8 py-4 rounded-lg font-bold text-sm transition-colors mb-6"
+          className="inline-flex items-center gap-3 bg-[#FFDD00] hover:bg-[#E5C700] text-black px-8 py-4 rounded-lg font-bold text-sm transition-colors mb-6"
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19.5 3.5c.8 1.3 1.2 2.7 1.2 4.3 0 3.4-2.9 7.8-5.2 10.9H9.3L7 3.8l5-.5.9 7.3c.9-1.5 2-3.8 2-5.4 0-1-.2-1.7-.4-2.3l5-1.4z" />
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+            <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+            <line x1="6" x2="6" y1="2" y2="4" />
+            <line x1="10" x2="10" y1="2" y2="4" />
+            <line x1="14" x2="14" y1="2" y2="4" />
           </svg>
-          Pay ${total} with Venmo
+          Pay ${total} on Buy Me a Coffee
         </a>
-
-        <p className="text-cream/40 text-sm mb-2">
-          Venmo @{VENMO_HANDLE}
-        </p>
 
         <div className="border border-cream/10 rounded-lg p-6 mt-8 text-left space-y-3">
           <h3 className="text-cream font-bold text-sm">Order Details</h3>
