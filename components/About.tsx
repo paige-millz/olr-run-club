@@ -32,24 +32,20 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex flex-col items-center justify-center gap-10">
             <blockquote className="text-3xl md:text-4xl font-black text-cream leading-tight">
               Old Roads.
               <br />
               Fast Legs.
             </blockquote>
+            <Image
+              src="/assets/RR_Crossing_Icon.svg"
+              alt=""
+              width={120}
+              height={120}
+              className="w-28 h-28 opacity-40"
+            />
           </div>
-        </div>
-
-        {/* Section divider */}
-        <div className="flex justify-center mt-20">
-          <Image
-            src="/assets/RR_Crossing_Icon.svg"
-            alt=""
-            width={48}
-            height={48}
-            className="w-12 h-12 opacity-30"
-          />
         </div>
       </div>
     </section>
