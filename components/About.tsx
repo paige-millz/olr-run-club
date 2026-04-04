@@ -43,7 +43,7 @@ export default function About() {
               alt=""
               width={120}
               height={120}
-              className="w-28 h-28 opacity-40"
+              className="w-28 h-28"
             />
           </div>
         </div>
