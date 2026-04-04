@@ -33,10 +33,10 @@ export default function About() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-10">
-            <blockquote className="text-3xl md:text-4xl font-black text-cream leading-tight">
-              Old Roads.
+            <blockquote className="text-2xl md:text-3xl font-black text-cream leading-tight">
+              Just a cooler at the end of 5890.
               <br />
-              Fast Legs.
+              Because we appreciate the hustle.
             </blockquote>
             <Image
               src="/assets/RR_Crossing_Icon.svg"
