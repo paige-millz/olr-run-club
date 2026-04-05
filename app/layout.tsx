@@ -29,8 +29,11 @@ export const metadata: Metadata = {
     images: ["/assets/FREE_WATER___RUNNERS___BIKERS_ONLY.png"],
   },
   icons: {
-    icon: "/assets/favicon.png",
-    apple: "/assets/favicon.png",
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 };
 
